@@ -104,6 +104,9 @@ print(list(itertools.product(list_a, repeat=2)))                    순열 / 중
 print(list(itertools.combinations(list_a, 2)))                      조합 / 중복 x
 print(list(itertools.combinations_with_replacement(list_a, 2)))     조합 / 중복 O
 '''
+a = list(itertools.combinations(list_a, 2))
+del a[0]
+print(a)
 '''     모든 조합 구하기(곱집합)
 iterable1 = 'ABCD'
 iterable2 = 'xy'

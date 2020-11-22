@@ -53,7 +53,7 @@ dict_a, dict_b, dict_c = dict(enumerate(list_a)), dict(enumerate(list_b)), dict(
 #print('우측정렬'.rjust(30))                 #공백문자를 안쓰면 ' '와 같이 출력됨
 #print('가운데정렬'.center(30,'#'))           #공백문자를 다른글자로 바꿀 수 있음
 ''' 대소문자 전환 '''
-#print('aAbBcCdD'.swapsace())
+#print('aAbBcCdD'.swapcase())
 ''' 대소문자 확인'''
 #print(str_b.islower())
 #print(str_b.isupper())

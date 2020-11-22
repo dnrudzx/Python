@@ -6,16 +6,17 @@ def solution(number, k):
 
     number = list(number)
     k = len(number) - k
-    while k > 0:
-        if k>1:
-            lst = number[:-(k-1)]
-        else:
-            lst = number
-        num = max(lst)
-        answer += str(num)
-        idx = number.index(num)
-        number = number[idx+1:]
-        k -= 1
+    idx = -1
+    for i in range(1,k+1):
+        val = 0
+        for j in range(idx+1,len(number)-k+i):
+            if val < int(number[j]):
+                val = int(number[j])
+                if val == 9:
+                    idx = j
+                    break
+                idx = j
+        answer += str(val)
 
     return answer
 
